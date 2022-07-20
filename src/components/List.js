@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { motion, AnimatePresence } from "framer-motion";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 
 
@@ -55,11 +56,12 @@ export default function List({ todo, editTodoModal, setEditTodoModal, handleDele
           ) : (
             <motion.div
               variants={child}
-              className="w-[600px] lg:w-[330px] text-center flex justify-center cursor-default"
+              className="w-fit lg:w-[330px] flex justify-center  cursor-default"
             >
               {" "}
-              <p className="bg-neutral-100 w-fit py-4 px-8 text-gray-300 font-medium rounded-full shadow-sm">
+              <p className="border-b-[2px] border-black w-fit pb-4 pr-8 flex gap-4 items-center text-lg capitalize">
                 Start by adding a new todo
+                <RiArrowRightUpLine className="text-2xl"/>
               </p>{" "}
             </motion.div>
           )}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { motion } from "framer-motion";
-import { MdDelete } from "react-icons/md";
+import { RiDeleteBin5Fill } from "react-icons/ri";
 import { toast } from "react-hot-toast";
 
 import TodoModal from "./TodoModal";
@@ -35,10 +35,7 @@ export default function Item({ todo, deleted, setDeleted }) {
         showTodoModal={editTodoModal}
         setShowTodoModal={setEditTodoModal}
       />
-      <motion.div
-        variants={child}
-        whileHover={{ scale: 1.1 }}
-      >
+      <motion.div variants={child} whileHover={{ scale: 1.1 }}>
         <div
           className="w-[600px] flex items-center justify-between h-fit py-2 gap-4 cursor-pointer bg-white rounded-full lg:w-[330px]"
           onClick={handleEdit}
@@ -67,8 +64,8 @@ export default function Item({ todo, deleted, setDeleted }) {
               whileHover={{ scale: 1.5, color: "black", rotate: 4 }}
               whileTap={{ scale: 0.5 }}
             >
-              <MdDelete
-                className="focus:no-underline focus:outline-none w-8 h-8 "
+              <RiDeleteBin5Fill
+                className="focus:no-underline focus:outline-none w-[1.5rem] h-[1.5rem] "
                 onClick={handleDelete}
                 onKeyDown={handleDelete}
                 role="button"
