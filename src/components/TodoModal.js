@@ -183,7 +183,7 @@ export default function TodoModal({
               </motion.button>
               <motion.button
                 type="submit"
-                className="w-[100px] h-[40px] text-white bg-emerald-500 rounded-xl shadow"
+                className={`w-[100px] h-[40px] text-white ${type === "edit" ? 'bg-blue-500' : 'bg-green-500'} rounded-xl shadow`}
               >
                 {type === "edit" ? "Update" : "Add"}
               </motion.button>

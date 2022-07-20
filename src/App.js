@@ -17,7 +17,7 @@ export default function Home({todo}) {
         type="add"
       />
       <main className="min-h-screen bg-neutral-200 flex flex-col items-center justify-between gap-52 pt-12">
-        <div className="w-fit">
+        <div className="w-fit justify-self-center">
           {/* <Button setShowTodoModal={setShowTodoModal} /> */}
           <List setShowTodoModal={setShowTodoModal} />
         </div>
