@@ -7,7 +7,7 @@ export default function Button({ setShowTodoModal }) {
   return (
     <>
       <motion.button
-        className={`absolute w-fit h-fit items-center justify-center rounded-full gap-4 flex -top-8 right-0 z-10`}
+        className={`absolute w-fit h-fit items-center justify-center rounded-full gap-4 flex -top-8 right-0 z-10 lg:right-3`}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.5 }}
       >

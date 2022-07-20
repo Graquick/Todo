@@ -59,8 +59,8 @@ export default function List({ todo, editTodoModal, setEditTodoModal, handleDele
               className="w-fit lg:w-[330px] flex justify-center  cursor-default"
             >
               {" "}
-              <p className="border-b-[2px] border-black w-fit pb-4 pr-8 flex gap-4 items-center text-lg capitalize">
-                Start by adding a new todo
+              <p className="border-b-[2px] border-black w-fit pb-4 pr-8 flex gap-4 items-center text-lg lg:w-[300px]">
+                Start by Adding a New Todo
                 <RiArrowRightUpLine className="text-2xl"/>
               </p>{" "}
             </motion.div>
