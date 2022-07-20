@@ -1,16 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence, Reorder } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { CgMathPlus } from "react-icons/cg";
 
-const spring = {
-  duration: 0.1,
-  type: "spring",
-  stiffness: 500,
-  damping: 25,
-};
-
 export default function Button({ setShowTodoModal }) {
-  const [open, setOpen] = useState(false);
 
   return (
     <>

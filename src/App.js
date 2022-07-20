@@ -1,17 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useDispatch } from 'react-redux';
-import { motion, AnimatePresence, Reorder } from "framer-motion";
-import { Icon } from "@iconify/react";
+import React, { useState } from "react";
 import { Toaster } from "react-hot-toast"
-import { toast } from "react-hot-toast";
 
 import TodoModal from './components/TodoModal';
 import Button from './components/Button';
 import List from './components/List';
-import { addTodo, deleteTodo, editTodo } from "./slices/TodoSlice";
 
 export default function Home({todo}) {
-  const [showTodoModal, setShowTodoModal] = useState(true);
+  const [showTodoModal, setShowTodoModal] = useState(false);
 
 
   return (

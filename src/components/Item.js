@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { motion, AnimatePresence, Reorder } from "framer-motion";
+import { motion } from "framer-motion";
 import { MdDelete } from "react-icons/md";
-import { BiEditAlt } from "react-icons/bi";
 import { toast } from "react-hot-toast";
 
 import TodoModal from "./TodoModal";
-import { addTodo, deleteTodo, editTodo } from "../slices/TodoSlice";
+import { deleteTodo } from "../slices/TodoSlice";
 
 const child = {
   hidden: { y: 40, opacity: 0 },

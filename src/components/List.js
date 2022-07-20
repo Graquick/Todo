@@ -1,11 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { motion, AnimatePresence, Reorder } from "framer-motion";
-import { Icon } from "@iconify/react";
-import toast from "react-hot-toast";
+import { motion, AnimatePresence } from "framer-motion";
 
-import { addTodo, editTodo, deleteTodo } from "../slices/TodoSlice";
+
 
 import Item from "./../components/Item";
 

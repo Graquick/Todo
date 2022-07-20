@@ -1,18 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { motion, AnimatePresence, Reorder } from "framer-motion";
-import { Icon } from "@iconify/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { v4 as uuid } from "uuid";
 import toast from "react-hot-toast";
 
 import { addTodo, editTodo } from "../slices/TodoSlice";
 
-const spring = {
-  duration: .1,
-  type: "spring",
-  stiffness: 500,
-  damping: 25,
-};
 
 const container = {
   hidden: {
@@ -168,8 +161,8 @@ export default function TodoModal({
                 <option value="status" disabled defaultValue>
                   Status
                 </option>
-                <option value="not-started">Not started</option>
                 <option value="in-progress">In progress</option>
+                <option value="not-started">Not started</option>
                 <option value="done">Done</option>
               </select>
             </motion.div>
