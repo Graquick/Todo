@@ -173,7 +173,7 @@ export default function TodoModal({
             >
               <motion.button
                 type="button"
-                className="w-[100px] h-[40px] text-black bg-white shadow-sm"
+                className="w-[100px] h-[40px] text-black bg-white shadow-sm rounded-xl"
                 onClick={() => setShowTodoModal(false)}
                 onKeyDown={() => setShowTodoModal(false)}
                 initial={{ y: 40, opacity: 0 }}

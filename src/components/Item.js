@@ -40,7 +40,7 @@ export default function Item({ todo, deleted, setDeleted }) {
         whileHover={{ scale: 1.1 }}
       >
         <div
-          className="w-[600px] flex items-center justify-between h-16 gap-4 cursor-pointer bg-white rounded-full lg:w-[330px]"
+          className="w-[600px] flex items-center justify-between h-fit py-2 gap-4 cursor-pointer bg-white rounded-full lg:w-[330px]"
           onClick={handleEdit}
           onKeyDown={handleEdit}
           role="button"

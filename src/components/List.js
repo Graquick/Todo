@@ -33,31 +33,6 @@ export default function List({ todo, editTodoModal, setEditTodoModal, handleDele
   const sortedTodoList = [...todoList];
   sortedTodoList.sort((a, b) => new Date(b.time) - new Date(a.time)); // Not necessary ?
 
-  const status = [
-    {
-      id: 1,
-      color: <div className={`w-2 h-2 bg-green-400 rounded-full`}></div>,
-      title: "Done",
-    },
-
-    {
-      id: 2,
-      color: <div className={`w-2 h-2 bg-red-400 rounded-full`}></div>,
-      title: "Not started",
-    },
-
-    {
-      id: 3,
-      color: <div className={`w-2 h-2 bg-yellow-400 rounded-full`}></div>,
-      title: "In progress",
-    },
-
-    {
-      id: 4,
-      color: <div className={`w-2 h-2 bg-gray-400 rounded-full`}></div>,
-      title: "Status not set",
-    },
-  ];
   return (
     <>
       <AnimatePresence>
@@ -90,17 +65,6 @@ export default function List({ todo, editTodoModal, setEditTodoModal, handleDele
           )}
         </motion.div>
       </AnimatePresence>
-
-      <div className="flex h-8 gap-12 cursor-default justify-center items-center lg:w-[330px] lg:flex-col lg:h-fit">
-        {status.map((sta) => {
-          return (
-            <div key={sta.id} className="flex items-center gap-4">
-              {sta.color}
-              <span className="font-medium text-gray-400">{sta.title}</span>
-            </div>
-          );
-        })}
-      </div>
     </>
   );
 }
