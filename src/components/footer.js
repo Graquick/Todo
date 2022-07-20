@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div>
-      <footer className="items-center flex flex-col absolute left-0 right-0 mx-auto w-fit bottom-[1.5rem]">
+      <footer className="items-center flex flex-col absolute left-0 right-0 mx-auto w-fit bottom-[1.5rem] text-center lg:w-[330px]">
         <IconSet />
         <span className="w-2/6 h-[2px] bg-black mb-4"></span>
         <a
