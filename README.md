@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+![React Todo App](./banner.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Todo App - Brima Freeman.
 
-## Available Scripts
+A fully functional todo app that does exactly what you want it to.
 
-In the project directory, you can run:
+**live demo: [https://brimatodo.netlify.app/](https://brimatodo.netlify.app/)**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Coded with ❤️ by Brima Freeman
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Like my work? Check out more at my website [brimafreeman.netlify.app](https://brimafreeman.netlify.app/)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Description
 
-### `npm run build`
+In this project, I create a button which once clicked brings up a modal for adding a new todo item. The project focused around components and their states, as well as their props. To get the best result, a state management system like `React Redux` got the job done. All animations are done using `Framer Motion`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What we are going to learn/use
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React](https://reactjs.org/)
+- [React Redux](https://redux.js.org/)
+- [Framer Motion](https://framer.com/motion/)
+- [React icons](https://react-icons.netlify.com/)
+- [React Hot Toast](https://react-hot-toast.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After getting the necessary files from this repo, you need to go the file directory and run
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+and after that start the dev server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```shell
+npm start
+```
 
-## Learn More
+## Tools Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Code Editor: [VS Code](https://code.visualstudio.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Other projects
 
-### Code Splitting
+- [Snap](https://github.com/Graquick/Snap)
+- [Blog](https://github.com/Graquick/Blog)
+- [Fruit](https://github.com/Graquick/Fruit)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+&copy; Brima Freeman 20200 All Rights Reserved
