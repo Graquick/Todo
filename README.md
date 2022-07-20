@@ -1,6 +1,6 @@
-![React Todo App](./banner.png)
+![React Todo App](./public/banner.PNG)
 
-# React Todo App - Brima Freeman.
+# Todo App - Brima Freeman
 
 A fully functional todo app that does exactly what you want it to.
 
