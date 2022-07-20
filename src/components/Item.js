@@ -9,7 +9,7 @@ import { deleteTodo } from "../slices/TodoSlice";
 
 const child = {
   hidden: { y: 40, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: {delay: 0.5} },
+  visible: { y: 0, opacity: 1 },
 };
 
 export default function Item({ todo, deleted, setDeleted }) {
@@ -45,13 +45,13 @@ export default function Item({ todo, deleted, setDeleted }) {
         >
           <div className="flex items-center justify-between h-full gap-4 ml-4">
             {todo.status === "not-started" ? (
-              <div className={`w-4 h-4 rounded-full bg-red-400`}></div>
+              <div className={`w-4 h-4 rounded-full bg-red-500 shadow-2xl`}></div>
             ) : todo.status === "in-progress" ? (
-              <div className={`w-4 h-4 rounded-full bg-yellow-400`}></div>
+              <div className={`w-4 h-4 rounded-full bg-yellow-400 shadow-2xl`}></div>
             ) : todo.status === "done" ? (
-              <div className={`w-4 h-4 rounded-full bg-green-400`}></div>
+              <div className={`w-4 h-4 rounded-full bg-green-500 shadow-2xl`}></div>
             ) : (
-              <div className={`w-4 h-4 rounded-full bg-gray-400`}></div>
+              <div className={`w-4 h-4 rounded-full bg-neutral-200 shadow-inner`}></div>
             )}
 
             <div className="flex flex-col gap-1 cursor-default">
