@@ -30,13 +30,13 @@ In this project, I create a button which once clicked brings up a modal for addi
 
 ## Getting Started
 
-After getting the necessary files from this repo, you need to go the file directory and run
+After getting the necessary files from this repo, go to the file directory and run
 
 ```shell
 npm install
 ```
 
-and after that start the dev server
+and after that, start the dev server
 
 ```shell
 npm start
