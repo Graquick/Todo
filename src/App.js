@@ -17,7 +17,7 @@ export default function Home({todo}) {
         setShowTodoModal={setShowTodoModal}
         type="add"
       />
-      <main className="w-full min-h-screen gap-12 bg-neutral-200 flex flex-col pt-24 justify-center items-center relative">
+      <main className="w-full min-h-screen gap-12 bg-neutral-200 flex flex-col pt-24 justify-center items-center relative overflow-hidden">
         <div className=" flex flex-col gap-8 p-4 w-fit h-fit relative mb-44">
           <Button setShowTodoModal={setShowTodoModal} />
           <List />
