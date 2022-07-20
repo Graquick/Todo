@@ -23,7 +23,7 @@ export default function Home({todo}) {
         </div>
         <Footer />
       </main>
-      <Toaster />
+      <Toaster position="bottom-right" reverseOrder={false} />
     </>
   );
 }

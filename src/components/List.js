@@ -44,26 +44,28 @@ export default function List({ todo, editTodoModal, setEditTodoModal, handleDele
           exit="hidden"
           className="w-fit h-fit flex flex-col gap-4"
         >
-          {sortedTodoList && sortedTodoList.length > 0 ? (
-            sortedTodoList.map((todo, i) => (
-              <Item
-                key={todo.id}
-                todo={todo}
-                deleted={deleted}
-                setDeleted={setDeleted}
-              />
-            ))
-          ) : (
-            <motion.div
-              variants={child}
-              className="w-fit lg:w-[330px] flex justify-center cursor-default"
-            >
-              {" "}
-              <p className="border-b-[2px] border-black w-fit pb-4 flex gap-4 items-center text-lg lg:w-[300px]">
-                Start by Adding a new todo
-              </p>{" "}
-            </motion.div>
-          )}
+          <AnimatePresence>
+            {sortedTodoList && sortedTodoList.length > 0 ? (
+              sortedTodoList.map((todo, i) => (
+                <Item
+                  key={todo.id}
+                  todo={todo}
+                  deleted={deleted}
+                  setDeleted={setDeleted}
+                />
+              ))
+            ) : (
+              <motion.div
+                variants={child}
+                className="w-fit lg:w-[330px] flex justify-center cursor-default"
+              >
+                {" "}
+                <p className="border-b-[2px] border-black w-fit pb-4 flex gap-4 items-center text-lg lg:w-[300px]">
+                  Start by Adding a new todo
+                </p>{" "}
+              </motion.div>
+            )}
+          </AnimatePresence>
           <Button setShowTodoModal={setShowTodoModal} />
         </motion.div>
       </AnimatePresence>
