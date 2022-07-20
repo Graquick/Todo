@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Icon } from '@iconify/react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 
 import IconSet from './IconSet';
 
