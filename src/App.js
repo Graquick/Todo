@@ -16,10 +16,12 @@ export default function Home({todo}) {
         setShowTodoModal={setShowTodoModal}
         type="add"
       />
-      <main className="min-h-screen bg-neutral-200 flex flex-col items-center justify-between gap-52 pt-12">
-        <div className="w-fit justify-self-center">
-          {/* <Button setShowTodoModal={setShowTodoModal} /> */}
-          <List setShowTodoModal={setShowTodoModal} />
+      <main className="flex flex-col items-center justify-between min-h-screen pt-12 bg-neutral-200 gap-52">
+        <div className="top-0 left-0 right-0 m-auto mlg:bottom-0">
+          <div className="w-fit justify-self-center">
+            {/* <Button setShowTodoModal={setShowTodoModal} /> */}
+            <List setShowTodoModal={setShowTodoModal} />
+          </div>
         </div>
         <Footer />
       </main>
