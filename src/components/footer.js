@@ -6,18 +6,20 @@ function Footer() {
 
   return (
     <div>
-      <footer className="items-center flex flex-col absolute left-0 right-0 mx-auto w-fit bottom-[1.5rem] text-center lg:w-[330px]">
+      <footer className="flex flex-col items-center gap-2 pb-2 lg:w-[300px]">
         <IconSet />
-        <span className="w-2/6 h-[2px] bg-black mb-4"></span>
+        <span className="w-2/6 h-[2px] bg-black"></span>
         <a
-          className="flex justify-center flex-grow align-center"
+          className="text-center"
           href="https://brimafreeman.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <p className="text-gray-400">
             Copyright
-            <span className="h-4 ml-2 text-black hover:text-sky-500">&copy; Brima Freeman 2022 </span>
+            <span className="h-4 ml-2 text-black hover:text-sky-500">
+              &copy; Brima Freeman 2022{" "}
+            </span>
             All rights reserved
           </p>
         </a>

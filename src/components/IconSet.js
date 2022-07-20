@@ -12,7 +12,7 @@ const icons = [
 function IconSet(props) {
   return (
     <>
-      <div className="w-[230px] h-[24px] flex justify-between mb-[1.25rem] dark:text-white">
+      <div className="w-[230px] h-[24px] flex justify-between dark:text-white">
         {icons.map((ic, i) => (
           <motion.div
             key={i}
@@ -24,7 +24,7 @@ function IconSet(props) {
               target={ic.target}
               rel="noopener noreferrer"
             >
-              <Icon icon={ic.icon} className="text-[24px] cursor-pointer" />
+              <Icon icon={ic.icon} className="text-[20px] cursor-pointer" />
             </a>
           </motion.div>
         ))}

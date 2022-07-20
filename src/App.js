@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Toaster } from "react-hot-toast"
 
 import TodoModal from './components/TodoModal';
-import Button from './components/Button';
 import List from './components/List';
 import Footer from './components/footer';
 
@@ -17,12 +16,12 @@ export default function Home({todo}) {
         setShowTodoModal={setShowTodoModal}
         type="add"
       />
-      <main className="w-full min-h-screen gap-12 bg-neutral-200 flex flex-col pt-24 items-center relative overflow-hidden">
-        <div className=" flex flex-col gap-8 p-4 w-fit h-fit relative mb-44">
-          <Button setShowTodoModal={setShowTodoModal} />
-          <List />
+      <main className="min-h-screen bg-neutral-200 flex flex-col items-center justify-between gap-52 pt-12">
+        <div className="w-fit">
+          {/* <Button setShowTodoModal={setShowTodoModal} /> */}
+          <List setShowTodoModal={setShowTodoModal} />
         </div>
-      <Footer />
+        <Footer />
       </main>
       <Toaster />
     </>

@@ -9,7 +9,7 @@ import { deleteTodo } from "../slices/TodoSlice";
 
 const child = {
   hidden: { y: 40, opacity: 0 },
-  visible: { y: 0, opacity: 1 },
+  visible: { y: 0, opacity: 1, transition: {delay: 0.5} },
 };
 
 export default function Item({ todo, deleted, setDeleted }) {
