@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import IconSet from './IconSet';
+import IconSet from "./IconSet";
 
 function Footer() {
-
   return (
     <div>
       <footer className="flex flex-col items-center gap-2 pb-2 lg:w-[300px]">
@@ -28,4 +27,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

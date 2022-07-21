@@ -1,13 +1,27 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Icon } from '@iconify/react';
-
+import React from "react";
+import { motion } from "framer-motion";
+import { Icon } from "@iconify/react";
 
 const icons = [
-    { id: 1, href: 'https://github.com/Graquick', icon: 'akar-icons:github-fill', target: '_blank'},
-    { id: 2, href: 'https://www.linkedin.com/in/brima-freeman-34aa05238', icon: 'akar-icons:linkedin-box-fill', target: '_blank'},
-    { id: 3, href: 'mailto:brimafreeman@outlook.com', icon: 'uil:envelopes', target: '_self'},
-]
+  {
+    id: 1,
+    href: "https://github.com/Graquick",
+    icon: "akar-icons:github-fill",
+    target: "_blank",
+  },
+  {
+    id: 2,
+    href: "https://www.linkedin.com/in/brima-freeman-34aa05238",
+    icon: "akar-icons:linkedin-box-fill",
+    target: "_blank",
+  },
+  {
+    id: 3,
+    href: "mailto:brimafreeman@outlook.com",
+    icon: "uil:envelopes",
+    target: "_self",
+  },
+];
 
 function IconSet(props) {
   return (
@@ -19,11 +33,7 @@ function IconSet(props) {
             whileHover={{ scale: 1.5 }}
             whileTap={{ scale: 0.5 }}
           >
-            <a
-              href={ic.href}
-              target={ic.target}
-              rel="noopener noreferrer"
-            >
+            <a href={ic.href} target={ic.target} rel="noopener noreferrer">
               <Icon icon={ic.icon} className="text-[20px] cursor-pointer" />
             </a>
           </motion.div>
@@ -33,4 +43,4 @@ function IconSet(props) {
   );
 }
 
-export default IconSet
+export default IconSet;

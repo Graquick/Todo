@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { CgMathPlus } from "react-icons/cg";
 
 export default function Button({ setShowTodoModal }) {
-
   return (
     <>
       <motion.button

@@ -6,7 +6,6 @@ import toast from "react-hot-toast";
 
 import { addTodo, editTodo } from "../slices/TodoSlice";
 
-
 const container = {
   hidden: {
     opacity: 0,
@@ -16,8 +15,8 @@ const container = {
     scale: 1,
     opacity: 1,
     transition: {
-      staggerChildren: 0.4
-    }
+      staggerChildren: 0.4,
+    },
   },
 };
 
@@ -25,7 +24,6 @@ const child = {
   hidden: { y: 40, opacity: 0 },
   visible: { y: 0, opacity: 1 },
 };
-
 
 // Remember to add the 'old' todo as the last prop
 export default function TodoModal({
@@ -183,7 +181,9 @@ export default function TodoModal({
               </motion.button>
               <motion.button
                 type="submit"
-                className={`w-[100px] h-[40px] text-white ${type === "edit" ? 'bg-blue-500' : 'bg-green-500'} rounded-xl shadow`}
+                className={`w-[100px] h-[40px] text-white ${
+                  type === "edit" ? "bg-blue-500" : "bg-green-500"
+                } rounded-xl shadow`}
               >
                 {type === "edit" ? "Update" : "Add"}
               </motion.button>

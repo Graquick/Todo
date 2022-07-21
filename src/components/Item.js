@@ -13,27 +13,28 @@ const child = {
 };
 
 export default function Item({ todo, deleted, setDeleted }) {
-    const dispatch = useDispatch();
-    
-    const [editTodoModal, setEditTodoModal] = useState(false);
+  const dispatch = useDispatch();
 
-    const handleDelete = () => {
-      dispatch(deleteTodo(todo.id));
-      setDeleted(true);
-      toast.success("Todo Deleted Successfully");
-    };
+  const [editTodoModal, setEditTodoModal] = useState(false);
 
-    const handleEdit = () => {
-      setEditTodoModal(true);
-    };
+  const handleDelete = () => {
+    dispatch(deleteTodo(todo.id));
+    setDeleted(true);
+    toast.success("Todo Deleted Successfully");
+  };
+
+  // This is important why? Because it opens the update Modal, but why?
+  const handleEdit = () => {
+    setEditTodoModal(true);
+  };
 
   return (
     <>
       <TodoModal
-        type="edit"
         todo={todo}
         showTodoModal={editTodoModal}
         setShowTodoModal={setEditTodoModal}
+        type="edit"
       />
       <motion.div variants={child} whileHover={{ scale: 1.1 }}>
         <div
@@ -45,13 +46,21 @@ export default function Item({ todo, deleted, setDeleted }) {
         >
           <div className="flex items-center justify-between h-full gap-4 ml-4">
             {todo.status === "not-started" ? (
-              <div className={`w-4 h-4 rounded-full bg-red-500 shadow-2xl`}></div>
+              <div
+                className={`w-4 h-4 rounded-full bg-red-500 shadow-2xl`}
+              ></div>
             ) : todo.status === "in-progress" ? (
-              <div className={`w-4 h-4 rounded-full bg-yellow-400 shadow-2xl`}></div>
+              <div
+                className={`w-4 h-4 rounded-full bg-yellow-400 shadow-2xl`}
+              ></div>
             ) : todo.status === "done" ? (
-              <div className={`w-4 h-4 rounded-full bg-green-500 shadow-2xl`}></div>
+              <div
+                className={`w-4 h-4 rounded-full bg-green-500 shadow-2xl`}
+              ></div>
             ) : (
-              <div className={`w-4 h-4 rounded-full bg-neutral-200 shadow-inner`}></div>
+              <div
+                className={`w-4 h-4 rounded-full bg-neutral-200 shadow-inner`}
+              ></div>
             )}
 
             <div className="flex flex-col gap-1 cursor-default">
@@ -59,7 +68,8 @@ export default function Item({ todo, deleted, setDeleted }) {
               <span className="italic">Deadline: {todo.deadline}</span>
             </div>
           </div>
-          <div className="flex items-center justify-center  mr-4 text-2xl text-neutral-400">
+          
+          <div className="flex items-center justify-center mr-4 text-2xl text-neutral-400">
             <motion.div
               whileHover={{ scale: 1.5, color: "black", rotate: 4 }}
               whileTap={{ scale: 0.5 }}
