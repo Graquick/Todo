@@ -12,7 +12,7 @@ const icons = [
   },
   {
     id: 1,
-    href: "https://https://www.linkedin.com/in/brima-freeman-34aa05238",
+    href: "https://www.linkedin.com/in/brima-freeman-34aa05238",
     target: "_blank",
     icon: <AiFillLinkedin className="text-[20px] cursor-pointer" />,
   },
