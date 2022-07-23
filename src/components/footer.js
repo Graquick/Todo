@@ -8,7 +8,7 @@ export default function Footer() {
             <IconSet />
             <span className="w-2/6 h-[2px] bg-black"></span>
             <a href="https://brimafreeman.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <p className="text-gray-400">
+                <p className="text-center text-gray-400">
                     Copyright
                     <span className="h-4 ml-2 text-black hover:text-sky-500">
                         &copy; Brima Freeman{" "}
