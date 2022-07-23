@@ -31,9 +31,9 @@ export default function List({
   const [deleted, setDeleted] = useState(false);
 
   const todoList = useSelector((state) => state.todo.todoList);
-  const sortedTodoList = [...todoList];
+  const sortedtodoList = [...todoList];
   
-  // sortedTodoList.sort((a, b) => new Date(b.time) - new Date(a.time)); // Not necessary ?
+  // sortedtodoList.sort((a, b) => new Date(b.time) - new Date(a.time)); // Not necessary ?
 
   return (
     <>
@@ -46,8 +46,8 @@ export default function List({
           className="flex flex-col gap-4 w-fit h-fit"
         >
           <AnimatePresence>
-            {sortedTodoList && sortedTodoList.length > 0 ? (
-              sortedTodoList.map(todo => (
+            {sortedtodoList && sortedtodoList.length > 0 ? (
+              sortedtodoList.map(todo => (
                 <Item
                   key={todo.id}
                   todo={todo}

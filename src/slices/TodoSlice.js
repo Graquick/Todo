@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// Sorting out initial state by getting it from local storage
 const getInitialTodo = () => {
   // Receive data Todo data from local storage
   const localTodoList = window.localStorage.getItem("todoList");
@@ -17,6 +18,7 @@ const initialValue = {
   todoList: getInitialTodo(), // This function receives our TodoList as an object, jei!
 };
 
+// Sorting out first slice with all reducers and a name of 'todo' => access to this slice and its reducers will be done through prop 'todo'
 export const todoSlice = createSlice({
   name: "todo",
   initialState: initialValue,

@@ -68,7 +68,7 @@ export default function Item({ todo, deleted, setDeleted }) {
               <span className="italic">Deadline: {todo.deadline}</span>
             </div>
           </div>
-          
+
           <div className="flex items-center justify-center mr-4 text-2xl text-neutral-400">
             <motion.div
               whileHover={{ scale: 1.5, color: "black", rotate: 4 }}

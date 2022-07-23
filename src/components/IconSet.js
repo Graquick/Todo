@@ -1,46 +1,24 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Icon } from "@iconify/react";
+import React from 'react'
+import { motion } from 'framer-motion';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { IoMdMailUnread } from 'react-icons/io';
 
 const icons = [
-  {
-    id: 1,
-    href: "https://github.com/Graquick",
-    icon: "akar-icons:github-fill",
-    target: "_blank",
-  },
-  {
-    id: 2,
-    href: "https://www.linkedin.com/in/brima-freeman-34aa05238",
-    icon: "akar-icons:linkedin-box-fill",
-    target: "_blank",
-  },
-  {
-    id: 3,
-    href: "mailto:brimafreeman@outlook.com",
-    icon: "uil:envelopes",
-    target: "_self",
-  },
-];
+    {id: 1, href: "https://github.com/Graquick", target: "_blank", icon: <AiFillGithub className="text-[20px] cursor-pointer" />},
+    {id: 1, href: "https://github.com/Graquick", target: "_blank", icon: <AiFillLinkedin className="text-[20px] cursor-pointer" />},
+    {id: 1, href: "mailto:bimu.freeman@outlook.com", target: "_self", icon: <IoMdMailUnread className="text-[20px] cursor-pointer" />},
+]
 
-function IconSet(props) {
+export default function IconSet() {
   return (
-    <>
-      <div className="w-[230px] h-[24px] flex justify-between dark:text-white">
+    <div className="w-[230px] h-[24px] flex justify-between">
         {icons.map((ic, i) => (
-          <motion.div
-            key={i}
-            whileHover={{ scale: 1.5 }}
-            whileTap={{ scale: 0.5 }}
-          >
-            <a href={ic.href} target={ic.target} rel="noopener noreferrer">
-              <Icon icon={ic.icon} className="text-[20px] cursor-pointer" />
-            </a>
-          </motion.div>
+            <motion.div key={i} whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.5 }}>
+                <a href={ic.href} target={ic.target}>
+                    {ic.icon}
+                </a>
+            </motion.div>
         ))}
-      </div>
-    </>
-  );
+    </div>
+  )
 }
-
-export default IconSet;
