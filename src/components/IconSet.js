@@ -4,10 +4,25 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { IoMdMailUnread } from 'react-icons/io';
 
 const icons = [
-    {id: 1, href: "https://github.com/Graquick", target: "_blank", icon: <AiFillGithub className="text-[20px] cursor-pointer" />},
-    {id: 1, href: "https://github.com/Graquick", target: "_blank", icon: <AiFillLinkedin className="text-[20px] cursor-pointer" />},
-    {id: 1, href: "mailto:bimu.freeman@outlook.com", target: "_self", icon: <IoMdMailUnread className="text-[20px] cursor-pointer" />},
-]
+  {
+    id: 1,
+    href: "https://github.com/Graquick",
+    target: "_blank",
+    icon: <AiFillGithub className="text-[20px] cursor-pointer" />,
+  },
+  {
+    id: 1,
+    href: "https://https://www.linkedin.com/in/brima-freeman-34aa05238",
+    target: "_blank",
+    icon: <AiFillLinkedin className="text-[20px] cursor-pointer" />,
+  },
+  {
+    id: 1,
+    href: "mailto:bimu.freeman@outlook.com",
+    target: "_self",
+    icon: <IoMdMailUnread className="text-[20px] cursor-pointer" />,
+  },
+];
 
 export default function IconSet() {
   return (
