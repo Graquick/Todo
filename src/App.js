@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Toaster } from "react-hot-toast";
 import List from "./components/List";
 import TodoModal from "./components/TodoModal";
-import Footer from './components/Footer';
+import Footer from './components/footer';
 
 export default function Home({ todo }) {
   const [showTodoModal, setShowTodoModal] = useState(false);
