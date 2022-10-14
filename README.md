@@ -58,4 +58,4 @@ npm start
 
 ## License
 
-&copy; Brima Freeman 2020 All Rights Reserved
+&copy; Brima Freeman 2022 All Rights Reserved
